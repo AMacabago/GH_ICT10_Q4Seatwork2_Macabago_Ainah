@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- PYSCRIPT -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>EX 17: Init & Self</title>
+</head>
+<body>
+    <form class="rounded m-3 p-3 bg-light shadow text-center">
+        <h3>Grade 10 Classmate System</h3>
+        <input id="name" placeholder="Name"><br>
+        <input id="section" placeholder="Section"><br>
+        <input id="subject" placeholder="Favorite Subject"><br><br>
+
+        <button type="button" py-click="add_student">Add Classmate</button>
+        <input type="button" py-click="show_classmates" value="Show List">
+    </form>
+    
+    <form class="rounded m-3 p-3 bg-light shadow text-center">
+        <h3>Class List</h3>
+        <div id="output"></div>
+    </form>
+    <py-script src="main.py"></py-script>
+</body>
+
+
+</html>
